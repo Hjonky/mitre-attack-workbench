@@ -211,9 +211,7 @@ The redesign was verified with a production build, 10 automated backend tests, a
 - **VirusTotal report unavailable:** verify `VT_API_KEY`, restart the server, and check the returned status. Unknown hashes and rate limits are shown explicitly.
 - **`npm start` does not show the app:** run `npm run build` first.
 
-## Publishing and project scope
-
-See the [GitHub publishing guide](docs/GITHUB_GUIDE.md) for exact upload commands, repository settings, portfolio presentation, and the difference between uploading code and hosting the app.
+## Project scope
 
 This app currently targets local research. It has no user authentication, authorization, or durable conversation storage. Public hosting requires deployment-specific access controls, HTTPS, request limiting, and persistent SQLite storage. GitHub Pages alone cannot run this Express/SQLite application. [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) describes its static hosting model.
 
