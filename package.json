@@ -1,0 +1,20 @@
+{
+  "name": "mitre-attack-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A focused workspace for MITRE ATT&CK techniques, tactic analytics, and file hash reputation.",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=22.12.0 <23 || >=24.0.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build --workspace frontend",
+    "start": "npm start --workspace backend",
+    "test": "node --test backend/test/api.test.js",
+    "seed": "npm run seed --workspace backend"
+  }
+}

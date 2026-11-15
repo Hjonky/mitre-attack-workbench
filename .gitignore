@@ -1,0 +1,12 @@
+node_modules/
+frontend/dist/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+backend/uploads/
+backend/mitre.db-*
+.DS_Store
+Thumbs.db
+.vscode/
